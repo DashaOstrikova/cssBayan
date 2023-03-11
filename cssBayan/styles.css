@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #F6F6ED;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 40px 0 15px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #D3D9E1;
+}
+
+.bayan__item {
+    padding: 20px 0;
+}
+
+.bayan__text {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #1E5CD1;
+    text-align: left;
+    padding-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-in;
+}
+
+.bayan__content {
+    text-align: center;
+}
+
+.bayan__img {
+    width: 375px;
+}
