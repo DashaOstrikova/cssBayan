@@ -24,10 +24,18 @@ body {
 }
 
 .bayan__item {
+    position: relative;
     padding: 20px 0;
 }
 
-.bayan__item-panel {
+.bayan__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.bayan__trigger {
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -56,11 +64,13 @@ body {
 }
 
 .bayan__text,
-.bayan__icon {
+.bayan__icon,
+.bayan__content {
     transition: all 0.5s ease-in;
 }
 
-.bayan__items:hover .bayan__text {
+.bayan__items:hover .bayan__text,
+.bayan__input:checked ~ .bayan__trigger .bayan__text {
     color: black;
 }
 
@@ -68,7 +78,12 @@ body {
     display: block;
 }
 
-.bayan__item:hover .bayan__content {
+.bayan__input:checked ~ .bayan__trigger .bayan__icon {
+    transform: rotate(0deg);
+}
+
+.bayan__item:hover .bayan__content,
+.bayan__input:checked ~ .bayan__content {
     display: block;
 }
 
