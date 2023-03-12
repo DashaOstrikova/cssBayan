@@ -57,8 +57,8 @@ body {
 }
 
 .bayan__icon {
-    display: none;
     width: 20px;
+    opacity: 0;
     cursor: pointer;
     transform: rotate(-45deg);
 }
@@ -70,25 +70,26 @@ body {
 }
 
 .bayan__items:hover .bayan__text,
-.bayan__input:checked ~ .bayan__trigger .bayan__text {
+.bayan__input:checked ~ .bayan__label .bayan__text {
     color: black;
 }
 
 .bayan__items:hover .bayan__icon {
-    display: block;
+    opacity: 1;
 }
 
-.bayan__input:checked ~ .bayan__trigger .bayan__icon {
+.bayan__input:checked ~ .bayan__label .bayan__icon {
     transform: rotate(0deg);
 }
 
 .bayan__item:hover .bayan__content,
-.bayan__input:checked ~ .bayan__content {
-    display: block;
+.bayan__input:checked ~ .bayan__label .bayan__content {
+    height: 100%;
 }
 
 .bayan__content {
-    display: none;
+    height: 0;
+    overflow: hidden;
     text-align: center;
 }
 
