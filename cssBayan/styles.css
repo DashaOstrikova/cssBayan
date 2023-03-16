@@ -96,7 +96,8 @@ body {
 }
 
 .bayan__img {
-    height: 16.875rem;
+    max-height: 16.875rem;
+    max-width: 100%;
 }
 
 @media (min-width: 821px) {
